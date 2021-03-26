@@ -9,6 +9,13 @@ public class Point {
     private int x;
     private int y;
 
+
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y);
+    }
+
     //自动生成代码快捷键:alt+insert
     public Point(int x, int y) {
         this.x = x;

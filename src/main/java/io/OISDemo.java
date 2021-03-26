@@ -19,7 +19,7 @@ public class OISDemo {
             Object readObject()
             对象输入流提供的readObject方法可以将读取的字节还原为
             对应的java对象，前提是读取的字节应当是对象输出流将一个
-            对象转换的一组字节。返回时统一以Object类型返回，因此
+            对象转换的一组字节。返回时统一以Object类型返回， 如果使用Person 类型来接收就需要使用引用数据类型进行强制类型转换因此
             接收到该对象后要造型。
          */
         Person p = (Person)ois.readObject();

@@ -18,14 +18,15 @@ public class MapDemo {
             将一组键值对存入到当前Map中。
             由于Map有一个要求:key不允许重复(使用key自身equals比较判定重复，与集合一致)
             因此如果使用已有的key存放value时则会替换value。返回值为被替换的value。
+          ++++++ 所以说明 put() 方法是有返回值的 注意********++++
             如果key不存在，则正常存入Map，此时返回值为null。
          */
         /*
             当Map的Value类型是包装类时，获取该值应当使用包装类类型的变量接收，不要
             使用对应的基本类型变量接收，避免自动拆箱导致的空指针异常。
          */
-//        int value = map.put("语文",99);//put返回值为null时自动拆箱会出现空指针异常
-        Integer value = map.put("语文",99);
+//        int valuex = map.put("语文",99).intValue();//  inValue()  是自动拆箱操作--put返回值为null时自动拆箱会出现空指针异常
+        Integer value = map.put("语文",99).intValue();
         System.out.println("value:"+value);
         map.put("数学",98);
         map.put("英语",97);

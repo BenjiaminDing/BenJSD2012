@@ -9,6 +9,8 @@ import java.io.ObjectOutputStream;
  *
  * 对象流:java.io.ObjectOutputStream和ObjectInputStream
  * 对象流是一对高级流，作用是进行对象的序列化与反序列化
+ * 序列化就是将程序中编写的对象的相关信息 使用FileOutputStream 和ObejectOutputStream 将一个对象的所有信息序列化 (转化为一组字符串)写入
+ * 文件 person.obj --  相反如果从文件中读取的过程是 数据的反序列化
  */
 public class OOSDemo {
     public static void main(String[] args) throws IOException {
