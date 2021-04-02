@@ -19,7 +19,7 @@ public class IntegerDemo {
          */
 //        Integer i1 = Integer.valueOf(d);
 //        Integer i2 = Integer.valueOf(d);
-        System.out.println(i1==i2);//valueOf创建则为true
+        System.out.println(i1==i2);//valueOf创建则为true-------  超过127  结果就不一样了
         //包装类都重写过equals方法。
         System.out.println(i1.equals(i2));
 
@@ -31,7 +31,28 @@ public class IntegerDemo {
         System.out.println(dou);
 
 
+        Integer  a=800;
+        Integer b=800;
+        int  c=800;
+        // Modified by Benjiamin at 2021/4/2  9:34
+
+        System.out.println(a==b);
+        System.out.println(a==c);//  优先进行自动拆箱
+
+
+
+        Integer  a1=126;
+        Integer b1=126;
+        int  c1=126;
+        // Modified by Benjiamin at 2021/4/2  9:34
+
+
+        System.out.println(a1==b1);//  涉及 字符串常量池  字面量的复用   就是同一个对象,
+
+
     }
+
+    /*      System.out.println(a==c);  包装类和基本数据类型 == 比较 默认让包装类自动拆箱,然后进行比较*/
 }
 
 

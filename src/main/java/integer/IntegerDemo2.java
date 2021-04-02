@@ -14,6 +14,8 @@ public class IntegerDemo2 {
         long lmax = Long.MAX_VALUE;
         System.out.println("lmax:"+lmax);
 
+
+
         /*
             包装类提供了一个静态方法parseXXX(String line)
             可以将字符串解析为对应的基本类型数据。但是前提是该字符串

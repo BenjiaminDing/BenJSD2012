@@ -22,6 +22,10 @@ public class IntegerDemo3 {
          */
         d = i;
 
+        Integer.toString(5);
+
+
+        //  .java---到  .class  过程就是编译期,在 变为.class文件 就是自动拆装箱 之后的结果了
 
     }
 }
