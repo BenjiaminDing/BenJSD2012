@@ -4,7 +4,7 @@ Create by Benjiamin at2021/4/2  10:33 BenJSD2012
 
 public class T {
     public void demo(){
-        System.out.println("车丝");
+        System.out.println("测试");
     }
 
     public void name(){

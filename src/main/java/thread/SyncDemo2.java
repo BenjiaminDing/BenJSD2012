@@ -53,11 +53,7 @@ class Shop{
     }
 }
 
-/*  synchronized  修饰符
-*
-*
-*
-* */
+
 
 
 
