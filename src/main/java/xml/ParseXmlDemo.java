@@ -30,7 +30,7 @@ public class ParseXmlDemo {
                 获取元素名,标签的名字
 
                 String getText()
-                获取开始与结束标签中间的文本.
+                获取标签开始与结束标签中间的文本.
 
                 Element element(String name)
                 获取当前标签中指定名字的子标签
@@ -50,8 +50,8 @@ public class ParseXmlDemo {
             System.out.println("共有"+list.size()+"个<emp>标签");
             //遍历集合,获取每一个<emp>标签,并通过它获取到该员工的相关信息
             for(Element empEle : list){
-                //获取员工名字
-                //1获取<name>标签
+                //获取员工各级装换为相应的变量
+                //1获取名字
                 Element nameEle = empEle.element("name");
                 //2获取<name>标签中间的文本
                 String ename = nameEle.getText();

@@ -12,9 +12,11 @@ public class ReflectDemo3 {
 
         //反射
         Class cls = Class.forName("reflect.Person");
-        //通过类对象获取对应的构造器
+        //通过类对象获取对应的构造器---jdk9以后就用这种方法
+
 //        Constructor c = cls.getConstructor();//不传参数就是获取无参构造器
-        Constructor c = cls.getConstructor(String.class,int.class);//Person(String,int)
+        Constructor c = cls.getConstructor(String.class,int.class);//--对应类似这个结构Person(String,int)
+          /*   Object o = cls.newInstance();  Deno2 中使用的方法 上面一行使用的是 不同类的方法*/
 
         Object o = c.newInstance("范传奇",22);//new Person("范传奇",22);
         System.out.println(o);

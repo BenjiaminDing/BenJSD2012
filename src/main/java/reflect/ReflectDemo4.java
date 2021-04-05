@@ -12,20 +12,20 @@ public class ReflectDemo4 {
         p.sayHello();
 
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("请输入类名:");
-        String className = scanner.nextLine();
-        System.out.println("请输入方法名:");
-        String methodName = scanner.nextLine();
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("请输入类名:");
+//        String className = scanner.nextLine();
+//        System.out.println("请输入方法名:");
+//        String methodName = scanner.nextLine();
 
         //反射
 //        Class cls = Class.forName("reflect.Person");
-        Class cls = Class.forName(className);
+        Class cls = Class.forName("reflect.Person");
         //实例化
         Object o = cls.newInstance();//new Person()
 
 //        Method m = cls.getMethod("sayHello");
-        Method m = cls.getMethod(methodName);
+        Method m = cls.getMethod("sayHello");
         m.invoke(o);//p.sayHello()
 
 

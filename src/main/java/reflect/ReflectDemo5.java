@@ -12,11 +12,11 @@ public class ReflectDemo5 {
         p.say("大家好啊!",5);
 
 
-        Class cls = Class.forName("reflect.Person");
+        Class cls = Class.forName("练习0402.reflect.Person");
         Object o = cls.newInstance();
 
         Method m = cls.getMethod("say",String.class);//say(String)
-        m.invoke(o,"大家好~~~");
+        m.invoke(o,"大家好****");
 
         Method m2 = cls.getMethod("say",String.class,int.class);//say(String,int)
         m2.invoke(o,"大家好啊~~~",5);

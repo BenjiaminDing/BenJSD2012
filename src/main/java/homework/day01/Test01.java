@@ -38,4 +38,5 @@ public class Test01 {
 		//2从index处开始截取到字符串末尾
 		return name.substring(index);
 	}
+
 }
