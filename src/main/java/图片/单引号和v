@@ -1,0 +1,9 @@
+   接口,抽象类均  ---------------
+  抽象基类  inputstream
+          outputStream
+
+   文件流:
+   ---FileInputStream(String path)
+    --FileInputStream(File dest)
+
+

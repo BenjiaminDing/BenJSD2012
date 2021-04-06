@@ -12,6 +12,7 @@ import java.util.Iterator;
  * 泛型实际上编译器认可的，原型为Object，泛型只是辅助编译器检查赋值操作时泛型类型的检查和
  * 获取泛型值使得自动造型。
  */
+// Modified by Benjiamin at 2021/4/6  12:09 
 public class CollectionDemo5 {
     public static void main(String[] args) {
         /*
@@ -32,7 +33,7 @@ public class CollectionDemo5 {
         Iterator<String> it = c.iterator();
         while(it.hasNext()){
             //编译器编译时会根据泛型指定的类型补上造型的代码:
-//            String str = (String)it.next();//下面代码编译后的字节码文件中会有造型
+//            String str = (String)it.next();//下面代码编译后的字节码文件中会有造型---编译器idea会帮我加上 这个String
             String str = it.next();//获取时不用再添加造型语句
             System.out.println(str);
         }

@@ -9,7 +9,7 @@ import java.util.List;
  * JDK8之后，Collection中添加了一些方法，其中支持了一个基于lambda表达式遍历集合的方法foreach
  */
 public class ForeachDemo {
-    public static void main(String[] args) {
+    public   static void main(String[] args) {
         List<String> c = new ArrayList<>();
         c.add("one");
         c.add("two");
@@ -47,7 +47,7 @@ public class ForeachDemo {
             当多个线程操作同一个集合时,首先应当选取使用线程安全的集合,同时遍历就不应当
             在使用迭代器,而应当使用foreach方法.这样操作做到与增删元素互斥保证并发安全.
          */
-        c.forEach((str)->System.out.println(str));
+//        c.forEach((str)->System.out.println(str));
         c.forEach(
                 (str)->{
                     System.out.println(str);

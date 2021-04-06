@@ -3,7 +3,7 @@ package collection;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
-
+// Modified by Benjiamin at 2021/2/4/
 /**
  * 集合的遍历
  * Iterator iterator()
@@ -62,6 +62,33 @@ public class IteratorDemo {
     }
 }
 
+
+
+
+
+// Modified by Benjiamin at 2021/4/6  12:27
+/*
+新循环底层就是迭代器
+
+
+
+*/
+
+/*
+*  泛型也只是 编译期认可的---java不认可的
+*
+*
+* JDK5之后的处理    新循环也只是编译器认可的 ,java 不认可这个东西--在编译结束后,
+* 编译器会将 我们写的新循环的格式, 整理转化为 普通的for循环, 传输给java,所以java接收到的还是普通for循环
+* 所以新循环就是为了使用者方便
+* ,  泛型也是jdk之后
+* */
+
+
+
+/*  注意 foreach() 在jdk8之后才有
+* foreach{}  是基于lambda表达式的使用的
+* */
 
 
 
