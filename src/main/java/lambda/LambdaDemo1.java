@@ -2,7 +2,7 @@ package lambda;
 
 import java.io.File;
 import java.io.FileFilter;
-
+// Modified by Benjiamin at 2021/1/26  14:34
 /**
  * JDK8之后推出了一个新的特性:lambda表达式
  * lambda表达式可以用更简短的语法创建匿名内部类。

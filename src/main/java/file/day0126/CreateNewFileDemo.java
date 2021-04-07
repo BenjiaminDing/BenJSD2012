@@ -1,7 +1,8 @@
-package file;
+package file.day0126;
 
 import java.io.File;
 import java.io.IOException;
+// Modified by Benjiamin at 2021/1/26  09:33
 
 /**
  * 使用File创建一个文件

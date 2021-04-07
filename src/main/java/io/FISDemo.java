@@ -12,7 +12,7 @@ public class FISDemo {
         FileInputStream fis
                 = new FileInputStream("fos.txt");
 
-        byte[] data = new byte[1000];
+        byte[] data = new byte[10*1024];
         int len = fis.read(data);
         System.out.println("实际读取了"+len+"个字节");
         /*

@@ -2,6 +2,7 @@ package io;
 
 import java.io.*;
 
+
 /**
  * 使用缓冲流完成文件复制。
  *
@@ -10,10 +11,10 @@ import java.io.*;
  */
 public class CopyDemo2 {
     public static void main(String[] args) throws IOException {
-        FileInputStream fis = new FileInputStream("driver.exe");
+        FileInputStream fis = new FileInputStream("./myFile/demop.txt");
         BufferedInputStream bis = new BufferedInputStream(fis);
 
-        FileOutputStream fos = new FileOutputStream("driver_cp.exe");
+        FileOutputStream fos = new FileOutputStream("./myFile/demopf.txt");
         BufferedOutputStream bos = new BufferedOutputStream(fos);
         int d;
         long start = System.currentTimeMillis();

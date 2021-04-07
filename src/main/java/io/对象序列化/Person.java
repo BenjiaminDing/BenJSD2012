@@ -1,4 +1,4 @@
-package io;
+package io.对象序列化;
 
 import java.io.Serializable;
 import java.util.Arrays;

@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
-
+// create by Benjiamin at 2021/1/15:20
 /**
  * java.io.RandomAccessFile
  * RAF是专门用来读写文件的类。其基于指针对文件进行随机读写。
