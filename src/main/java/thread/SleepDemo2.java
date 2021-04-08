@@ -40,6 +40,12 @@ public class SleepDemo2 {
     }
 }
 
+/*
+* wait--- 等待含义 调用wait方法会把锁 也给释放掉,   sleep()  不会去掉锁;
+*
+* wait() 进入阻塞后 ,  通过notify()  唤醒线程一个线程, notifyAll()  唤醒所有线程
+*
+* */
 
 
 
