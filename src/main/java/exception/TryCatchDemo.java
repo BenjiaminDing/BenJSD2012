@@ -4,7 +4,12 @@ package exception;
  * 异常处理机制中的try-catch
  */
 public class TryCatchDemo {
-    public static void main(String[] args) {
+    public static void  main(String[] args) {
+     String ss=  name();
+        System.out.println(ss);
+    }
+
+    public static String  name(){
         System.out.println("程序开始了...");
         try {//try语句块用来扩上可能出错的代码片段
 //            String str = null;
@@ -22,10 +27,10 @@ public class TryCatchDemo {
             System.out.println(Integer.parseInt(str));
             //try语句块中报错代码以下内容都不会被执行!!!
             System.out.println("!!!!!!!!!!!");
-        //catch用来捕获try中出现的指定异常并予以解决
+            //catch用来捕获try中出现的指定异常并予以解决
         }catch(NullPointerException e){
             System.out.println("出现了空指针!");
-        //catch可以定义多个，当try中不同异常有不同处理方式时可以分别捕获
+            //catch可以定义多个，当try中不同异常有不同处理方式时可以分别捕获
         }catch(StringIndexOutOfBoundsException e){
             System.out.println("字符串下标越界了!");
         /*
@@ -40,7 +45,13 @@ public class TryCatchDemo {
          */
         }catch(Exception e){
             System.out.println("反正就是出了个错!");
+            return   "测试333";
+        }finally {
+            System.out.println("程序结束了...");
+            return  "c测试的 ";
         }
-        System.out.println("程序结束了...");
+
+
+
     }
 }
